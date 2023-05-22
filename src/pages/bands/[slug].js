@@ -1,7 +1,7 @@
 
 
 import { useContext } from "react";
-import singleBand from "../../components/single-band/singleBand";
+import singleBand from "../../../components/single-band/singleBand";
 
 function singleBandPage(props) {
   return (
@@ -24,7 +24,7 @@ export async function getServerSideProps(context) {
   const supabase = createServerSupabaseClient(context);
   // Check if we have a session
   const slug = context.params.slug;
-  const res = await fetch("https://vikingfestserver.fly.dev/bands");
+  const res = await fetch("https://bittersweet-painted-willow.glitch.me/bands");
   if (res.status !== 200) {
     return {
       notFound: true,

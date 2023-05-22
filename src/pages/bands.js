@@ -1,5 +1,5 @@
 import React from "react";
-import bandsDisplay from "../components/bands/bandsDisplay";
+import bandsDisplay from "../../components/bands/bandsDisplay";
 import { useState, useEffect } from "react";
 
 
@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 function Bands() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("https://bittersweet-painted-willow.glitch.me")
+    fetch("https://bittersweet-painted-willow.glitch.me/bands")
       .then((res) => res.json()``)
       .then((data) => {
         setData(data);

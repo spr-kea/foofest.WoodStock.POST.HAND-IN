@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image"; 
-import Anchor from "/Anchor";
+import Anchor from "../../../../Anchor";
 import styles from "./singleBand.module.css"; 
 
 
