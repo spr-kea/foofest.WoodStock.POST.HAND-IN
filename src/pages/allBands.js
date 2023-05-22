@@ -1,10 +1,13 @@
 import React from "react";
-import BandOverview from "../components/band-overview/BandOverview";
+import bandsDisplay from "../../components/bands/bandsDisplay";
 import { useState, useEffect } from "react";
+
+
+
 function Bands() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("https://vikingfestserver.fly.dev/bands")
+    fetch("https://bittersweet-painted-willow.glitch.me")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
@@ -15,7 +18,7 @@ function Bands() {
 
   return (
     <>
-      <BandOverview data={data} />
+      <bandsDisplay data={data} />
     </>
   );
 }
