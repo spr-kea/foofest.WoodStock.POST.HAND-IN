@@ -1,8 +1,17 @@
 import Head from "next/head";
+import { useAuth } from "/hooks/authFun";
+
+
 
 export default function Home() {
-  const { signOut, auth } = useAuth();
-  return <div>Hello</div>;
+
+  return  <>
+  <Head>
+    <title>EDC Buyer Research Generator</title>
+  </Head>
+
+  </>
+
 }
 
 export const getServerSideProps = async (ctx) => {

@@ -1,6 +1,6 @@
 import React  from "react"; 
 import styles  from "./bandGenre.module.css"; 
-import singleBand from "./singleBand/singleBand"; 
+import singleBand from "./single-Band/singleBand"; 
 
 function bandGenre (props){
     return (

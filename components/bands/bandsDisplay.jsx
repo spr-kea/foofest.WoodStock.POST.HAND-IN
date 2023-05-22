@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./bandsDisplay.module.css";
 import bandGenre from "./band-genre/bandGenre";
-import Anchor from "../../anchorApp"; 
+import Anchor from "/Anchor"; 
 
 
 

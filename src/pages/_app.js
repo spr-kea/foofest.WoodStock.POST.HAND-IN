@@ -1,7 +1,17 @@
-import '@/styles/globals.css'
+import "../styles/globals.css";
+
 import { useRouter } from "next/router";
 import { useState } from "react";
+import { AuthProvider } from "/contexts/auth";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  return (
+    
+        <Component {...pageProps} />
+  
+  );
 }
+
+export default MyApp;
