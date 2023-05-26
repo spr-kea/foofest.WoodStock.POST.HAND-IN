@@ -33,6 +33,7 @@ background-color: black;
   margin-left: 30rem;
   width: 44rem;
 height: 38rem;
+filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #4aff03) drop-shadow(0 0 30px #ff0099);
 
 
 

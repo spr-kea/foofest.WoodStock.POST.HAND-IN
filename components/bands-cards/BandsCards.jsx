@@ -38,7 +38,7 @@ function Bands(props) {
       <NavBar active="bands"></NavBar>
       <div className={styles.container}>
      <div className={styles.zektion}>
-      <Image src={newLogo} alt="logo"></Image></div>
+      <Image className={styles.neonEffekt} src={newLogo} alt="logo"></Image></div>
         
       <div className={styles.bandz}>
       <BandsGenre genre="Country" data={countryArr} />
