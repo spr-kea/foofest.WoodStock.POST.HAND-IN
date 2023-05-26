@@ -29,9 +29,7 @@ const IndexPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Perform any necessary logic here, such as processing the ticket purchase
-
-    // Reset the ticket counts
+   
     setRegularTickets(0);
     setVipTickets(0);
   };
