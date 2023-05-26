@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+
 const IndexPage = () => {
   const [regularTickets, setRegularTickets] = useState(0);
   const [vipTickets, setVipTickets] = useState(0);

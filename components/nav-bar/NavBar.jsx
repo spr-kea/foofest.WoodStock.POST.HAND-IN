@@ -2,7 +2,7 @@ import styles from "./NavBar.module.css";
 import Anchor from "../Anchor";
 import Image from "next/image";
 import bands from "../../public/bands.svg";
-
+import Link from 'next/link';
 
 
 
@@ -33,10 +33,10 @@ function NavBar(props) {
         
           <p>Schedule</p>
         </Anchor>
-        <Anchor  href="/booking">
+
+    <Link href="../pages/tickets.js">  
+          <p>Get Tickets</p>   </Link>
         
-          <p>Get Tickets</p>
-        </Anchor>
       </div>
     </section>
   );
