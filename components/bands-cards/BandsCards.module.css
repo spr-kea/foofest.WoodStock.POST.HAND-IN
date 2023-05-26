@@ -1,0 +1,43 @@
+.container {
+  padding: var(--spacing-s);
+  margin-bottom: var(--spacing-2xl);
+  margin-top: var(--padding4);
+  max-width: 1440px;
+background-color: black;
+  margin-right: auto;
+  margin-top: 13rem;
+
+
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .container > h1 {
+    margin-top: var(--padding4);
+  }
+}
+
+.zektion{
+  background-color: #8c65d0;
+  margin-top: -8.2rem;
+  width: 190%;
+  height: 40rem;
+  margin-left: -10rem;
+
+}
+
+
+.zektion > img {
+  margin-left: 30rem;
+  width: 44rem;
+height: 38rem;
+
+
+
+}
+
+.container >.bandz{
+  margin-left: 5rem;
+}
