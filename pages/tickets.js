@@ -1,9 +1,10 @@
 import { useState } from 'react';
-
+import { useRouter } from 'next/router';
 
 const IndexPage = () => {
   const [regularTickets, setRegularTickets] = useState(0);
   const [vipTickets, setVipTickets] = useState(0);
+  const router = useRouter();
 
   const handleRegularTicketChange = (e) => {
     const selectedTickets = parseInt(e.target.value);
@@ -30,10 +31,21 @@ const IndexPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-   
+    // Perform any necessary logic here, such as processing the ticket purchase
+
+    // Reset the ticket counts
     setRegularTickets(0);
     setVipTickets(0);
+
+    // Redirect to Green Page with ticket counts in the query string
+    router.push({
+      pathname: '/green',
+      query: { regularTickets, vipTickets },
+    });
   };
+
+  console.log('Regular Tickets:', regularTickets);
+  console.log('VIP Tickets:', vipTickets);
 
   return (
     <div>
