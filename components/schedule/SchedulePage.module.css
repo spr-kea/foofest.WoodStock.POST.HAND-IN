@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Baumans&family=Bungee+Inline&family=Bungee+Shade&family=Cairo&family=Faster+One&family=Fugaz+One&family=Inter:wght@300;600;900&family=JetBrains+Mono:wght@100;800&family=Joan&family=Kdam+Thmor+Pro&family=Keania+One&family=Major+Mono+Display&family=MedievalSharp&family=Roboto&family=Rubik+Mono+One&family=Space+Grotesk:wght@500;700&family=Syncopate:wght@700&family=Syne:wght@700;800&family=Tilt+Prism&family=Ubuntu+Mono:wght@400;700&display=swap');
+
 
 
 .page {
@@ -76,46 +76,20 @@ color: var(  --primary-color2);
   
 }
 .Midgard, .Vanaheim , .Jotunheim  {
-  background-color: var(  --primary-color2);
-  color: var(--secondar-color);
+  background-color: #8c65d0;
+  color: var(--primary-color2);
+  border: 3px solid black;
+margin-bottom: 1rem;
+
 }
 
 .stageFilters .active {
-  outline: 2px solid white;
-}
-@media only screen and (min-width: 768px) {
-  .header {
-    margin-top: var(--padding4);
-  }
-  .stageFilters {
-    position: fixed;
-    inset: auto 0 0;
-    background-color: var(--primary-100);
-    padding-inline: 1rem;
-    padding-block: var(--spacing-s);
-  }
-  .actList {
-    padding-block: var(--spacing-s);
-    max-height: 58vh;
-    overflow-y: auto;
-  }
-  .page {
-    padding-bottom: 3rem;
-  }
+  outline: 2px solid rgb(103, 253, 171);
 }
 
-@media only screen and (min-width: 1200px) {
-  .header select {
-    font-size: var(--type-body);
-    height: 3rem;
 
-
- 
   
 
-
-  }
-}
 
 
  .labeling{

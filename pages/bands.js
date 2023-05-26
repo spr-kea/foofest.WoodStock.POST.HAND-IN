@@ -11,7 +11,7 @@ function Bands() {
       });
   }, []);
 
-  function filterData() {}
+
 
   return (
     <>

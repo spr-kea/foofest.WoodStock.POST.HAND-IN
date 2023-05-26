@@ -14,9 +14,7 @@ function BandSingleView(props) {
     <>
 
       <NavBar></NavBar>
-
-
-      
+  
       <article className={styles.BandView}>
         <div className="container">
           <div className={styles.top}>

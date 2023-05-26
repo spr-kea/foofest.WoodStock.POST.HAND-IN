@@ -29,7 +29,7 @@ function NavBar(props) {
         
           <p>Line-Up</p>
         </Anchor>
-        <Anchor className={styles[scheduleClass]} href="/schedule">
+        <Anchor className={styles.header} href="/schedule">
         
           <p>Schedule</p>
         </Anchor>
