@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 
-const IndexPage = () => {
+const BookingPage = () => {
   const [regularTickets, setRegularTickets] = useState(0);
   const [vipTickets, setVipTickets] = useState(0);
   const router = useRouter();
@@ -77,4 +77,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default BookingPage;
