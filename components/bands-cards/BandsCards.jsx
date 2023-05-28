@@ -39,7 +39,7 @@ function Bands(props) {
       <div className={styles.container}>
      <div className={styles.zektion}>
       <Image className={styles.neonEffekt} src={newLogo} alt="logo"></Image></div>
-        
+        <div className={styles.lineUp}> Line-Up</div>
       <div className={styles.bandz}>
       <BandsGenre genre="Country" data={countryArr} />
         <BandsGenre genre="Electronic" data={electronicArr} />

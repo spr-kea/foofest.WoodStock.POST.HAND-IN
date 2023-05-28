@@ -7,17 +7,12 @@ background-color: black;
   margin-right: auto;
   margin-top: 13rem;
 
-
+  color: #000000;
 
 }
 
 
 
-@media only screen and (min-width: 768px) {
-  .container > h1 {
-    margin-top: var(--padding4);
-  }
-}
 
 .zektion{
   background-color: #8c65d0;
@@ -42,3 +37,20 @@ filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #4aff03) drop-shadow(0 0 
 .container >.bandz{
   margin-left: 5rem;
 }
+
+.lineUp {
+  font-size: var(--padding4);
+  color: #4aff03;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  font-family: 'Rubik Mono One', sans-serif;
+
+ }
+
+.bandz {
+  color: #000000;
+
+ }
+
