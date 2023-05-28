@@ -9,17 +9,11 @@ import bands from "../../public/bands.svg";
 
 import { useState } from "react";
 
-function NavBar(props) {
+function NavBar() {
   const [newLogo] = useState(bands);
 
 
-
-  const [scheduleClass] = useState("");
-
-
-
-
-  return (
+ return (
     <section className={styles.navbarWrapper}>
       <div className={styles.navbar}>
        
@@ -33,7 +27,7 @@ function NavBar(props) {
         
           <p>Schedule</p>
         </Anchor>
-        <Anchor  href="/booking">
+        <Anchor  href="/get-tickets">
         
           <p>Get Tickets</p>
         </Anchor>
