@@ -13,6 +13,7 @@ function NavBar() {
   const [newLogo] = useState(bands);
 
 
+<<<<<<< HEAD
 
 
 
@@ -20,6 +21,9 @@ function NavBar() {
 
 
   return (
+=======
+ return (
+>>>>>>> Start-with-booking
     <section className={styles.navbarWrapper}>
       <div className={styles.navbar}>
        
@@ -33,9 +37,13 @@ function NavBar() {
         
           <p>Schedule</p>
         </Anchor>
+<<<<<<< HEAD
 
     <Link href="/tickets">  
           <p>Get Tickets</p>   </Link>
+=======
+        <Anchor  href="/get-tickets">
+>>>>>>> Start-with-booking
         
       </div>
     </section>
