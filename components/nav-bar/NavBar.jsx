@@ -34,7 +34,7 @@ function NavBar(props) {
           <p>Schedule</p>
         </Anchor>
 
-    <Link href="../pages/tickets.js">  
+    <Link href="/tickets">  
           <p>Get Tickets</p>   </Link>
         
       </div>
