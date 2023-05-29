@@ -1,25 +1,28 @@
 import React from "react";
 import { useRouter } from "next/router";
 
+import InputField from "../../components/UI-cards/InputField";
+import SelectionAreaOptions from "../../components/UI-cards/SelectionAreaOptions"; 
+
 function firstStepBooking(props) {
   const availableSpotArray = props.availableSpotData;
   const router = useRouter();
   async function confirmBooking() {
-    const id = await reserveCampingSpot(props.bookingInfos.selectedArea);
+    const id = await reserveCampingSpot(props);
     await spotAreaValid(id);
   }
 
   async function spotAreaValid(id) {
-    const area = props.bookingInfos.selectedArea;
+    const area = props.selectedArea;
     const index = availableSpotArray.findIndex((item) => item.area === area);
     const available = availableSpotArray[index]?.available || 0;
 
-    if (props.bookingInfos.totalTickets <= available) {
-      props.setbookingInfos({ ...props.bookingInfos, validates: true, orderID: id });
+    if (props.totalTickets <= available) {
+      props.setbookingInfos({ ...props, validates: true, orderID: id });
 
       router.push("/tickets/bookingStep2");
 
-      props.setbookingInfos({ ...props.bookingInfos, validates: false });
+      props.setbookingInfos({ ...props, validates: false });
 
     }
   }
@@ -46,10 +49,10 @@ function firstStepBooking(props) {
   return (
     <div >
       <h2>Select your tickets</h2>
-      <input updateRegularTickets={props.updateRegularTickets} title={"Regular"} name={"RegularTicket"} price={"799,-"} setTickets={props.setTickets} />
-      <InputCounter updateVIPTickets={props.updateVIPTickets} title={"VIP"} name={"VIPTicket"} price={"1299,-"} />
+      <InputField updateRegularTickets={props.updateRegularTickets} title={"Regular"} name={"RegularTicket"} price={"799,-"} setTickets={props.setTickets} />
+      <InputField updateVIPTickets={props.updateVIPTickets} title={"VIP"} name={"VIPTicket"} price={"1299,-"} />
       <h2>Select your camping area</h2>
-      <input
+      <SelectionAreaOptions
         selectedSpot={props.selectedSpot}
         selectOption1={availableSpotArray[0]?.area}
         selectOption1Space={availableSpotArray[0]?.available}
