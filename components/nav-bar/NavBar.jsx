@@ -9,12 +9,12 @@ import Link from 'next/link';
 
 import { useState } from "react";
 
-function NavBar(props) {
+function NavBar() {
   const [newLogo] = useState(bands);
 
 
 
-  const [scheduleClass] = useState("");
+
 
 
 
