@@ -72,10 +72,6 @@ function SchedulePage({ schedule }) {
           </label>
         </section>
         <section className={styles.actList}>
-          <ul>
-            {inDisplay.map((item) => item.act !== "break" && <ScheduleItem act={item} key={item.act} running={running} />)}
-          </ul>
-        </section>
         <div className={styles.stageFilters}>
           <ul>
             {stages.map((stage) => (
@@ -87,6 +83,10 @@ function SchedulePage({ schedule }) {
             ))}
           </ul>
         </div>
+          <ul>
+            {inDisplay.map((item) => item.act !== "break" && <ScheduleItem act={item} key={item.act} running={running} />)}
+          </ul>
+        </section>
       </div>
     </>
   );

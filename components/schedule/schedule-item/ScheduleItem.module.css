@@ -5,11 +5,12 @@
   gap: 7rem;
   padding-bottom: 1rem;
   position: relative;
-margin-top:  var(--padding2);
-font-family: 'Ubuntu Mono', monospace;
-font-size: var(--padding4);
-color: var(  --primary-color2);
-border-top: 20px solid black;
+  margin-top:  var(--padding2);
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: var(--padding4);
+  color: var(  --primary-color2);
+  border-top: 20px solid black;
+  font-size: 1.5rem;
 
 
 }
@@ -28,7 +29,6 @@ border-top: 20px solid black;
 }
 .specs {
   order: -1;
-
   position: relative;
   padding-left: var(--spacing-xs);
 }
@@ -45,6 +45,7 @@ border-top: 20px solid black;
 .bottomText, .topText {
   color: var(--primary-color2);
   font-weight: 700;
+  
 
 }
 .starYellow {
@@ -57,8 +58,8 @@ border-top: 20px solid black;
 .starYellow {
   margin-left: auto;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 700px) {
   .item {
-    font-size: var(--type-body);
+    font-size: 1rem;
   }
 }

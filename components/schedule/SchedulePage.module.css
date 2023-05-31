@@ -4,19 +4,19 @@
 
 .page {
   padding-inline: 1rem;
-  padding-top: 10rem;
+  padding-top: 3rem;
   padding-bottom: 8rem;
   color: var(--secondary-300);
-  max-width: 50rem;
-margin-left: 20rem;
-
+  margin-left: 20rem;
+  margin-right: 10rem;
+  font-size: 1rem;
+  max-width: 100vw;
 
 }
 .page h1 {
   font-size: var(--type-h1);
   font-weight: 700;
 margin-bottom:var(--padding3);
-
 margin-top:6rem;
   font-family: 'Rubik Mono One', sans-serif;
 color: var(  --primary-color2);
@@ -27,14 +27,18 @@ color: var(  --primary-color2);
 .header label {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-2xs);
+  margin-left: 0;
+  z-index: 100;
+  
 }
 .header select {
   font-size: var(--type-label);
   height: 3rem;
   border-radius: 6px;
-  padding-left: 1rem;
+  padding-left: .5rem;
   border: solid black 4px;
+  background-color: black;
+  z-index: 100;
 }
 
 .header h1 {
@@ -42,36 +46,35 @@ color: var(  --primary-color2);
 }
 
 .actList {
-  padding-block: var(--spacing-s);
-  max-height: 55vh;
-  overflow-y: auto;
+  padding-bottom: var(--spacing-s);
+  height: 100%;
+  overflow-y: hidden;
+  width: 100%;
+  overflow-x: hidden;
 }
 .actList ul {
   display: flex;
   gap: var(--padding3);
   flex-direction: column;
+  width: 100rem;
 }
 .stageFilters {
   position: fixed;
   inset: auto 0 0;
   background-color: var(--primary-100);
-  padding-inline: 1rem;
-  padding-block: var(--spacing-s) 6rem;
+  padding-block: var(--spacing-s);
 }
 .stageFilters ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-s);
-  max-width: 600px;
-  margin-inline: auto;
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 300px;
 }
 .stageFilters button {
   width: 50%;
   border-radius: 5px;
   padding-block: 0.4rem;
   font-weight: 700;
-  font-size: var(--type-body);
-  margin-top: 10rem;
+  font-size: 1.5rem;
 
   
 }
@@ -79,7 +82,6 @@ color: var(  --primary-color2);
   background-color: #8c65d0;
   color: var(--primary-color2);
   border: 3px solid black;
-margin-bottom: 1rem;
 
 }
 
@@ -88,14 +90,56 @@ margin-bottom: 1rem;
 }
 
 
-  
-
-
 
  .labeling{
 
   width: 9rem;
   margin-left: 47rem;
 
+
+}
+
+
+@media only screen and (min-width: 200px) {
+  
+  .page{
+    margin-left: 0;
+    margin-right: 0;
+    font-size: .5rem;
+    }
+  .stageFilters {
+    position: relative;
+    inset: auto 0 0;
+    background-color: var(--primary-100);
+  }
+  .stageFilters ul {
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    
+    align-items: center;
+
+  }
+
+  .stageFilters button {
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.4rem;
+    font-weight: 700;
+    font-size: var(--type-body);
+  }
+}
+
+
+@media only screen and (min-width: 700px) {
+  .stageFilters button{
+    font-size: 1.3rem;
+  }
+
+  .header select{
+    font-size: 1.2rem;
+    width: 100%;
+
+  }
 
 }
