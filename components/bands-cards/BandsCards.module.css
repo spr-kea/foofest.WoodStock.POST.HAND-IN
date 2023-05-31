@@ -24,30 +24,7 @@
   width: 50%;
   margin-top: 10%;
   
-
-
-
 }
-
-.container >.bandz{
-  margin-left: 5rem;
-}
-
-.lineUp {
-  font-size: var(--padding4);
-  color: #4aff03;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4rem;
-  font-family: 'Rubik Mono One', sans-serif;
-
- }
-
-.bandz {
-  color: #000000;
-
- }
 
 
  .hero{
