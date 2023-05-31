@@ -39,6 +39,7 @@ function Bands(props) {
       <div className={styles.container}>
      <div className={styles.zektion}>
       <Image className={styles.neonEffekt} src={newLogo} alt="logo"></Image></div>
+      <div className={styles.hero}> <h1>Hello</h1><br/><p>We’ve got a few options for bookings so why not let us help you find the right one for you. Start the process below, we promise its not a horrible experience</p></div>
         <div className={styles.lineUp}> Line-Up</div>
       <div className={styles.bandz}>
       <BandsGenre genre="Country" data={countryArr} />

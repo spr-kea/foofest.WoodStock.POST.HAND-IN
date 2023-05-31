@@ -17,6 +17,9 @@
   --accent-red: #f61944;
   --accent-pink: #e051ad;
 
+
+  
+
   /* Main colours */
   --primary-color: #7427aa;
   --primary-color2: #111117;
@@ -25,6 +28,15 @@
   --secondary-300: #e8f5fc;
   --secondary-200: #d1d9de;
   --secondary-100: #b1c3cc;
+
+  
+/* THE TRUE ONES */
+--color-primary1: #10181d;
+--color-primary2: #1f2f39;
+--color-secondary1: #ffffff;
+--color-secondary2: #000000;
+--color-accent1: #ff0084;
+--color-accent2: #23fdd7;
 
   /* Spacings */
 

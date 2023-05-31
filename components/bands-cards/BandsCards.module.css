@@ -54,3 +54,16 @@ filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #4aff03) drop-shadow(0 0 
 
  }
 
+
+ .hero{
+  display: flex;
+  margin-inline: 20rem;
+  flex-direction: column;
+  max-width: 50vw;
+  margin-top: 10rem;
+  color: #4aff03;
+ }
+
+ .hero h1{
+  color: var(--color-accent1);
+ }
