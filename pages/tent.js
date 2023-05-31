@@ -11,6 +11,9 @@ const TentPage = () => {
       <p>VIP Tickets: {vipTickets}</p>
       <p>Green Camping: {greenCamping}</p>
       <p>Optional Tent Setup: {optionalTentSetup}</p>
+
+
+      
     </div>
   );
 };
