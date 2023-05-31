@@ -31,15 +31,15 @@
   --secondary-100: #b1c3cc;
 
   
-/* THE TRUE ONES */
---color-primary1: #10181d;
---color-primary2: #1f2f39;
---color-secondary1: #ffffff;
---color-secondary2: #000000;
---color-accent1: #ff0084;
---color-accent2: #23fdd7;
+  /* THE TRUE ONES */
+  --color-primary1: #10181d;
+  --color-primary2: #1f2f39;
+  --color-secondary1: #ffffff;
+  --color-secondary2: #000000;
+  --color-accent1: #ff0084;
+  --color-accent2: #23fdd7;
 
---font-headline: 'Technor', sans-serif;   ----font-paragraph: 'Supreme', sans-serif;
+
 
   /* Spacings */
 

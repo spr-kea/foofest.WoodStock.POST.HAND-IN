@@ -7,6 +7,8 @@ module.exports = {
         'primary-color': '#7427aa',
         'primary-color2': '#111117',
         'secondary-300': '#e8f5fc',
+        'color-secondary2': '#000000',
+        
       },
       spacing: {
         '2': '1.25rem',
