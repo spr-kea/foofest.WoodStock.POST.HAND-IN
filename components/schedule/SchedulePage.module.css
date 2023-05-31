@@ -142,4 +142,13 @@ color: var(  --primary-color2);
 
   }
 
+  .page h1 {
+    font-size: 4rem;
+  }
+
+    .page{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: .5rem;
+    }
 }
