@@ -66,4 +66,5 @@ filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #4aff03) drop-shadow(0 0 
 
  .hero h1{
   color: var(--color-accent1);
+  font-family: --font-headline;
  }
