@@ -55,38 +55,41 @@ function SchedulePage({ schedule }) {
   return (
     <>
       <NavBar active="schedule"></NavBar>
+      <div className={styles.container}>
+        <div className={styles.page}>
+          <section className={styles.header}>
+            <h1>Schedule</h1>
+            <label className={styles.labeling}>
 
-      <div className={styles.page}>
-        <section className={styles.header}>
-          <h1>Schedule</h1>
-          <label className={styles.labeling}>
-
-            <select value={chosenDay} onChange={(e) => setChosenDay(e.target.value)}>
-              <option value="mon">Monday</option>
-              <option value="tue">Tuesday</option>
-              <option value="wed">Wednesday</option>
-              <option value="thu">Thursday</option>
-              <option value="fri">Friday</option>
-              <option value="sat">Sunday</option>
-            </select>
-          </label>
-        </section>
-        <section className={styles.actList}>
-        <div className={styles.stageFilters}>
-          <ul>
-            {stages.map((stage) => (
-              <li key={stage}>
-                <button className={`${currentStage === stage ? styles.active : ""} ${styles[stage]}`} onClick={() => handleStageFilter(stage)}>
-                  {stage}
-                </button>
-              </li>
-            ))}
-          </ul>
+              <select value={chosenDay} onChange={(e) => setChosenDay(e.target.value)}>
+                <option value="mon">Monday</option>
+                <option value="tue">Tuesday</option>
+                <option value="wed">Wednesday</option>
+                <option value="thu">Thursday</option>
+                <option value="fri">Friday</option>
+                <option value="sat">Sunday</option>
+              </select>
+            </label>
+            <div className={styles.stageFilters}>
+            <ul>
+              {stages.map((stage) => (
+                <li key={stage}>
+                  <button className={`${currentStage === stage ? styles.active : ""} ${styles[stage]}`} onClick={() => handleStageFilter(stage)}>
+                    {stage}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+            
+          </section>
+          <section className={styles.actList}>
+          
+            <ul>
+              {inDisplay.map((item) => item.act !== "break" && <ScheduleItem act={item} key={item.act} running={running} />)}
+            </ul>
+          </section>
         </div>
-          <ul>
-            {inDisplay.map((item) => item.act !== "break" && <ScheduleItem act={item} key={item.act} running={running} />)}
-          </ul>
-        </section>
       </div>
     </>
   );

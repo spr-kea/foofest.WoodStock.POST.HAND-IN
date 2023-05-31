@@ -43,7 +43,7 @@
 }
 
 .bottomText, .topText {
-  color: var(--primary-color2);
+  color: var(--secondary-300);
   font-weight: 700;
   
 
@@ -58,8 +58,8 @@
 .starYellow {
   margin-left: auto;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   .item {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
