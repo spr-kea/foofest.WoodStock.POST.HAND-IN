@@ -2,8 +2,8 @@
 
     background-color: var(--color-primary1);
     overflow-x: hidden;
-  
-  }
+
+}
   
   
   
@@ -39,7 +39,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    padding-top: 10rem;
+    padding-bottom: ;
+    box-sizing: border-box;
     font-family: 'Rubik Mono One', sans-serif;
   background-color: var(--color-primary1);
    }
@@ -47,6 +49,9 @@
   .bandz {
     color: #000000;
   background-color: var(--color-primary1);
+
+  box-sizing: border-box;
+  padding-bottom: 10rem;
    }
   
   
