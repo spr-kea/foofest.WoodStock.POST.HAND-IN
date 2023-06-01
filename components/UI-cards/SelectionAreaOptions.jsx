@@ -3,23 +3,23 @@ import React from "react";
 function SelectionAreaOptions(props) {
   return (
     <div>
-      <select onChange={props.selectArea} name="select" id="select">
+      <select onChange={props.selectedArea} name="select" id="select">
         <option value="choose" defaultValue>
           Choose your camping area
         </option>
-        <option value={props.optionOne}>
+        <option value={props.selectOption1}>
           {props.selectOption1} ({props.selectOption1Space} available)
         </option>
-        <option value={props.optionTwo}>
+        <option value={props.selectOption2}>
           {props.selectOption2} ({props.selectOption2Space} available)
         </option>
-        <option value={props.optionThree}>
+        <option value={props.selectOption3}>
           {props.selectOption3} ({props.selectOption3Space} available)
         </option>
-        <option value={props.optionFour}>
+        <option value={props.selectOption4}>
           {props.selectOption4} ({props.selectOption4Space} available)
         </option>
-        <option value={props.optionFive}>
+        <option value={props.selectOption5}>
           {props.selectOption5} ({props.selectOption5Space} available)
         </option>
       </select>

@@ -1,28 +1,77 @@
 import React from "react";
 import { useRouter } from "next/router";
-
+import CulculateFunction from "../../components/UI-cards/calculatefunction";
 import InputField from "../../components/UI-cards/InputField";
-import SelectionAreaOptions from "../../components/UI-cards/SelectionAreaOptions"; 
+import SelectionAreaOptions from "../../components/UI-cards/SelectionAreaOptions";
+import NavBar from "../../components/nav-bar/NavBar";
 
-function firstStepBooking(props) {
+function FirstStepBooking(props) {
   const availableSpotArray = props.availableSpotData;
   const router = useRouter();
+
+  let ticketsValid = false;
+
+  if (props.orderInfo.totalTickets > 0) {
+    ticketsValid = true;
+  }
+  if (props.orderInfo.totalTickets === 0) {
+    ticketsValid = false;
+  }
+
   async function confirmBooking() {
-    const id = await reserveCampingSpot(props);
+    const id = await reserveCampingSpot(props.orderInfo.selectedArea, props.orderInfo.totalTickets);
     await spotAreaValid(id);
   }
 
   async function spotAreaValid(id) {
-    const area = props.selectedArea;
-    const index = availableSpotArray.findIndex((item) => item.area === area);
-    const available = availableSpotArray[index]?.available || 0;
 
-    if (props.totalTickets <= available) {
-      props.setbookingInfos({ ...props, validates: true, orderID: id });
+    if (props.orderInfo.selectedArea == "Svartheim") {
+      if (props.orderInfo.totalTickets <= availableSpotArray[0].available) {
+        props.setOrderInfo({ ...props.orderInfo, validates: true, orderID: id });
+        router.push("/tickets/bookingStep2");
+      } else {
+        props.setOrderInfo({ ...props.orderInfo, validates: false });
 
+      }
+    }
+    if (props.orderInfo.selectedArea == "Nilfheim") {
+      if (props.orderInfo.totalTickets <= availableSpotArray[1].available) {
+        props.setOrderInfo({ ...props.orderInfo, validates: true, orderID: id });
+        router.push("/tickets/bookingStep2");
+      } else {
+        props.setOrderInfo({ ...props.orderInfo, validates: false });
+
+      }
+    }
+    if (props.orderInfo.selectedArea == "Helheim") {
+      if (props.orderInfo.totalTickets <= availableSpotArray[2].available) {
+        props.setOrderInfo({ ...props.orderInfo, validates: true, orderID: id });
+        router.push("/tickets/bookingStep2");
+      } else {
+        props.setOrderInfo({ ...props.orderInfo, validates: false });
+
+      }
+    }
+    if (props.orderInfo.selectedArea == "Muspelheim") {
+      if (props.orderInfo.totalTickets <= availableSpotArray[3].available) {
+        props.setOrderInfo({ ...props.orderInfo, validates: true, orderID: id });
+        router.push("/tickets/bookingStep2");
+      } else {
+        props.setOrderInfo({ ...props.orderInfo, validates: false });
+
+      }
+    }
+    if (props.orderInfo.selectedArea == "Alfheim") {
+      if (props.orderInfo.totalTickets <= availableSpotArray[4].available) {
+        props.setOrderInfo({ ...props.orderInfo, validates: true, orderID: id });
       router.push("/tickets/bookingStep2");
+      } else {
+        props.setOrderInfo({ ...props.orderInfo, validates: false });
 
-      props.setbookingInfos({ ...props, validates: false });
+      }
+    }
+    if (props.orderInfo.selectedArea == "") {
+      props.setOrderInfo({ ...props.orderInfo, validates: false });
 
     }
   }
@@ -46,14 +95,30 @@ function firstStepBooking(props) {
     router.push("/");
   }
 
+
   return (
-    <div >
+    
+    <div>
+    <NavBar/>
       <h2>Select your tickets</h2>
-      <InputField updateRegularTickets={props.updateRegularTickets} title={"Regular"} name={"RegularTicket"} price={"799,-"} setTickets={props.setTickets} />
-      <InputField updateVIPTickets={props.updateVIPTickets} title={"VIP"} name={"VIPTicket"} price={"1299,-"} />
+      <InputField
+        updateRegularTickets={props.updateRegularTickets}
+        title={"Regular"}
+        name={"Regular"}
+        price={"799,-"}
+        setTickets={props.setTickets}
+      />
+      <InputField
+        
+        updateVIPTickets={props.updateVIPTickets}
+        title={"VIP"}
+        name={"VIPTicket"}
+        price={"1299,-"}
+      />
       <h2>Select your camping area</h2>
       <SelectionAreaOptions
-        selectedSpot={props.selectedSpot}
+      selectedArea={props.selectedArea}
+
         selectOption1={availableSpotArray[0]?.area}
         selectOption1Space={availableSpotArray[0]?.available}
         selectOption2={availableSpotArray[1]?.area}
@@ -65,33 +130,23 @@ function firstStepBooking(props) {
         selectOption5={availableSpotArray[4]?.area}
         selectOption5Space={availableSpotArray[4]?.available}
       />
-      
+      {<CulculateFunction orderInfo={props.orderInfo} setOrderInfo={props.setOrderInfo} />}
       <div>
-        <button  onClick={cancelBooking}>
-          Cancel
-        </button>
-        <button onClick={confirmBooking}>
-          Select Camping Options 
-        </button>
+        <button onClick={cancelBooking}>Cancel</button>
+        <button onClick={confirmBooking}>Select Camping Options</button>
       </div>
     </div>
   );
 }
 
-
-export default firstStepBooking;
-
+export default FirstStepBooking;
 
 // Fetch data
-export async function getServerSideProps (){
-    const res=await fetch("https://bittersweet-painted-willow.glitch.me/available-spots"); 
-    const availableSpotData=await res.json(); 
+export async function getServerSideProps() {
+  const res = await fetch("https://bittersweet-painted-willow.glitch.me/available-spots");
+  const availableSpotData = await res.json();
 
-
-    return {
-        props:{availableSpotData},
-
-    };
-
+  return {
+    props: { availableSpotData },
+  };
 }
-
