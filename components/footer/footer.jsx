@@ -12,7 +12,7 @@ function Footer() {
     return (
       <section >
         <div className="flex flex-row space-x-8 w-full mb-3 justify-around items-center text-secondary-300 font-bold">
-          <Link className="flex flex-col w-28 items-center gap-2 text-lg cursor-pointer mt-3 ml-1 md:w-40 md:ml-20" href="/bands">
+          <Link className="flex flex-col w-28 items-center gap-2 text-lg cursor-pointer mt-3 ml-1 md:w-40 md:ml-20" href="/homepage">
             <Image src={newLogo} alt="logo" className="w-4/5" />
           
           </Link>
@@ -28,7 +28,7 @@ function Footer() {
           </Link>
 
 
-          
+
         </div>
       </section>
     );
