@@ -6,7 +6,7 @@ import SingleBand from "./single-band/SingleBand";
 
 function BandsGenre(props) {
   return (
-    <article>
+    <article className={styles.container}>
       <h1 className={styles.header}>{props.genre}</h1>
       <ul className={styles.list}>
         {props.data.map((band) => {
