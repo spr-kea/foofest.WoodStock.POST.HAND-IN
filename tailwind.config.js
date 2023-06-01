@@ -8,6 +8,12 @@ module.exports = {
         'primary-color2': '#111117',
         'secondary-300': '#e8f5fc',
         'color-secondary2': '#000000',
+        'primary1': '#10181d',
+        'primary2': '#1f2f39',
+        'secondary1': '#ffffff',
+        'secondary2': '#000000',
+        'accent1': '#ff0084',
+        'accent2': '#23fdd7',
         
       },
       spacing: {
@@ -25,10 +31,14 @@ module.exports = {
         'h5': '1.4rem',
         '1.3': '1.3rem', // added for font-size: 1.3rem
         '3xl': '1.875rem', // added for font-size: 3rem
+        'h4': '1.728rem',
+        'h3': '2.074rem',
+        'h2': '2.488rem',
+        'h1': '2.986rem',
       },
       fontFamily: {
-        'main': ['Inter'],
-        'secondary': ['Josefin Sans'],
+        'main': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif'],
+        'secondary': ['Josefin Sans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif'],
         'mono': ['Major Mono Display'],
       },
       zIndex: {
