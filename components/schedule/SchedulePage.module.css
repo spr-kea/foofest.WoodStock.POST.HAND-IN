@@ -20,7 +20,6 @@
 .page h1 {
   font-size: var(--type-h1);
   font-weight: 700;
-margin-bottom:var(--padding3);
 margin-top:6rem;
   font-family: 'Rubik Mono One', sans-serif;
 color: var(  --color-accent1);
@@ -73,8 +72,7 @@ color: var(  --color-accent1);
   position: fixed;
   inset: auto 0 0;
   background-color: var(--primary-100);
-  padding-block: var(--spacing-s);
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 .stageFilters ul {
   display: grid;
