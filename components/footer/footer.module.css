@@ -2,38 +2,60 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
-    width: 80%;
+    width: 70%;
     min-height: 50vh;
     align-items: center;
     justify-items: center;
     gap: 2rem;
     background-color: var(--color-accent1);
+   box-sizing: border-box;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
+
 .logo,
 .list{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+font-size: var(--type-h3);
 }
 
 .list{
+    grid-column-start: 3;
  height: 50%;
     justify-content: space-around;
-}
-.link{
-    
+    border-right:solid var(--color-accent2) 8px;
+    padding-right: 2rem;
+    height: auto;
 }
 
-.image {}
+.link{
+    color: var(--color-secondary1);
+}
+
+
 
 .rectangle {
     background-color: var(--color-accent1);
 }
 
-.line {}
+.button {
+box-sizing: border-box;
+padding: 1rem 5rem; 
+border:solid 8px var(--color-accent2);
+background-color: var(--color-primary1);  
+color: var(--color-secondary1);
+font-size: var(--type-h4);
+}
 
-.frame {}
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+}
 
 .home {}
 
@@ -44,3 +66,10 @@
 .info {}
 
 .contact {}
+
+@media (max-width: 767px) {
+.my-class{
+    grid-template-columns: 1fr;
+}
+
+  }

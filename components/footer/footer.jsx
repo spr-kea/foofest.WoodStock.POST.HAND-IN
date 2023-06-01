@@ -2,7 +2,7 @@ import Image from "next/image";
 import bands from "../../public/bands.svg";
 import Link from "next/link";
 import { useState } from "react";
-
+import styles from "./footer.module.css"
 
 function Footer() {
  
@@ -14,10 +14,17 @@ function Footer() {
       <section className={styles.rectangle}>
       <div className={styles['my-class']}>
       
-       <Link href="/bands" className={styles.logo}> 
+ 
+       
+     <div className={styles.left}>
+      <Link href="/bands" className={styles.logo}> 
           <Image src={newLogo} alt="logo" className={styles.image} />
+        
+        </Link> 
+        <Link href="/tickets">
+        <button className={styles.button}>Contact</button> 
         </Link>
-      
+     </div>
         <div className={styles.list}>
       <Link href="/lineup">
           <p className={styles.link}>Line-Up</p>
@@ -30,9 +37,9 @@ function Footer() {
         </Link>
           
         </div>
-       
       
-    
+       
+  
       
       </div>
     </section>
