@@ -1,0 +1,38 @@
+.input1{
+    color: var(--color-secondary1);
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    display: flex;
+    margin-left: 5rem;
+    margin-block: 1rem;
+    gap: 2rem;
+}
+
+.input2{
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    display: flex;
+    margin-left: 5rem;
+    width: 10%;
+
+
+}
+
+.numeric{
+    width: 10rem;
+}
+
+
+@media only screen and (max-width: 800px) {
+  
+ 
+
+
+    
+     .input1, .input2 {
+      
+      font-size: 1rem;
+      
+      
+     }
+    }

@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "./selection.module.css"
 
 function SelectionAreaOptions(props) {
   return (
-    <div>
-      <select onChange={props.selectedArea} name="select" id="select">
+    <div className={styles.option1}>
+      <select className={styles.option} onChange={props.selectedArea} name="select" id="select">
         <option value="choose" defaultValue>
           Choose your camping area
         </option>
