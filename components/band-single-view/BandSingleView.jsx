@@ -35,7 +35,7 @@ function BandSingleView(props) {
             <h3>Members :   {props.members}</h3>
           </section>
 
-     
+    
         </div>
       </article>
     </>
