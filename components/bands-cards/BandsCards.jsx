@@ -6,7 +6,7 @@ import NavBar from "../nav-bar/NavBar";
 import Footer from "../footer/footer";
 import { useState } from "react";
 import bands1 from "../../public/bands1.svg";
-
+import Link from "next/link";
 function Bands(props) {
   const [newLogo] = useState(bands1);
   console.log(props.data);
@@ -43,9 +43,9 @@ function Bands(props) {
           <h1 className="text-accent1 font-main font-bold text-h1 mx-80 max-md:text-h3 ml-4 mb-2">Hello</h1>
           <br/>
           <p className="text-secondary1 font-secondary text-h5 mx-80  max-w-3xl max-md:text-big-body ml-4 mr-4 mx-auto">We’ve got a few options for bookings so why not let us help you find the right one for you. Start the process below, we promise its not a horrible experience..</p>
-          <button className="rounded-lg px-2 font-main font-bold text-big-body text-primary1 bg-accent2 mt-12 w-48 mx-80 max-md:text-big-body ml-4 mr-4 mx-auto w-36">
+          <Link href="/tickets">  <button className="rounded-lg px-2 font-main font-bold text-big-body text-primary1 bg-accent2 mt-12 w-48 mx-80 max-md:text-big-body ml-4 mr-4 mx-auto w-36">
             Find Tickets
-          </button>
+          </button></Link>
         </div>
         <div className="flex flex-col items-center justify-center bg-primary2 h-screen w-full">
           <h1 className="text-accent1 font-main font-bold text-h1 text-center mb-8 max-md:text-h3">Who are we?</h1>
