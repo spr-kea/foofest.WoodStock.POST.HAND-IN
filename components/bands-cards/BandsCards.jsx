@@ -1,14 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./BandsCards.module.css";
-import BandsGenre from "./bands-genre/BandsGenre";
 import NavBar from "../nav-bar/NavBar";
 import Footer from "../footer/footer";
 import { useState } from "react";
-import bands1 from "../../public/bands1.svg";
+import logo from "../../public/logo.svg";
 import Link from "next/link";
 function Bands(props) {
-  const [newLogo] = useState(bands1);
+  const [newLogo] = useState(logo);
   console.log(props.data);
   const rockArr = handleFilter("Rock");
   const punkArr = handleFilter("Punk");

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bands from "../../public/bands.svg";
+import logo1 from "../../public/logo1.svg";
 import Link from "next/link";
 import { useState } from "react";
 import styles from "./footer.module.css"
@@ -8,7 +8,7 @@ function Footer() {
  
 
   
-    const [newLogo] = useState(bands);
+    const [newLogo] = useState(logo1);
 
     return (
       <section className={styles.rectangle}>
