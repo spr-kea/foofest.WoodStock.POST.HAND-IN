@@ -3,6 +3,7 @@ import bands from "../../public/bands.svg";
 import Link from "next/link";
 import { useState } from "react";
 
+
 function Footer() {
  
 
