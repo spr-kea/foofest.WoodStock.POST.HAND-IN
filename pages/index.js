@@ -5,7 +5,7 @@ export default function Home() {
 
 
   React.useEffect(() => {
-    router.push('/bands');
+    router.push('/homepage');
   }, []);
 
 
