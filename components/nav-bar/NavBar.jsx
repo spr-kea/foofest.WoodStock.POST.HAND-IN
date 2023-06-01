@@ -1,10 +1,10 @@
 import Image from "next/image";
-import bands from "../../public/bands.svg";
+import logo1 from "../../public/logo1.svg";
 import Link from "next/link";
 import { useState } from "react";
 
 function NavBar() {
-  const [newLogo] = useState(bands);
+  const [newLogo] = useState(logo1);
 
   return (
     <section className="bg-color-secondary2 flex justify-center fixed top-0 w-full h-20 z-10 font-mono ">
@@ -13,7 +13,7 @@ function NavBar() {
           <Image src={newLogo} alt="logo" className="w-4/5" />
         
         </Link>
-        <Link className="flex flex-col w-20 items-center gap-2 text-sm md:text-lg cursor-pointer mt-3 ml-360 md:w-80" href="/lineup"><p className={newLogo === bands ? "text" : ""}>Line-Up</p></Link>
+        <Link className="flex flex-col w-20 items-center gap-2 text-sm md:text-lg cursor-pointer mt-3 ml-360 md:w-80" href="/lineup"><p className={newLogo === logo1 ? "text" : ""}>Line-Up</p></Link>
         
         <Link className="flex flex-col w-20 items-center gap-2 text-sm md:text-lg md:w-80  cursor-pointer mt-3 ml-360" href="/schedule">
           <p>Schedule</p>

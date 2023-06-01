@@ -5,10 +5,10 @@ import styles from "./LineUp.module.css";
 import BandsGenre from "./bands-genre/BandsGenre";
 import NavBar from "../nav-bar/NavBar";
 import { useState } from "react";
-import bands1 from "../../public/bands1.svg";
+import logo from "../../public/logo.svg";
 
 function Bands(props) {
-  const [newLogo] = useState(bands1);
+  const [newLogo] = useState(logo);
   console.log(props.data);
   const rockArr = handleFilter("Rock");
   const punkArr = handleFilter("Punk");
@@ -49,7 +49,8 @@ function Bands(props) {
         <BandsGenre genre="Rock" data={rockArr} />
         <BandsGenre genre="Soul" data={soulArr} />
         <BandsGenre genre="World" data={worldArr} />
-      </div></div>
+      </div>
+      </div>
  
   );
 }

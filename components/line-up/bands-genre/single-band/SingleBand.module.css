@@ -20,6 +20,7 @@
   width: fit-content;
   height: fit-content;
   display: flex;
+  border: solid var(--color-accent2) 5px ;
 }
 
 .wrapper h2 {
@@ -31,7 +32,7 @@
   padding: var(--padding2);
   font-size: 1rem;
   color: var(--primary-300);
-  background:#8c65d0;
+  background:var(--color-primary2);
   backdrop-filter: blur(2px);
   font-family: 'Rubik Mono One', sans-serif;
 
