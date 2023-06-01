@@ -1,0 +1,46 @@
+.my-class {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    width: 80%;
+    min-height: 50vh;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    background-color: var(--color-accent1);
+}
+.logo,
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.list{
+ height: 50%;
+    justify-content: space-around;
+}
+.link{
+    
+}
+
+.image {}
+
+.rectangle {
+    background-color: var(--color-accent1);
+}
+
+.line {}
+
+.frame {}
+
+.home {}
+
+.vip {}
+
+.news {}
+
+.info {}
+
+.contact {}
