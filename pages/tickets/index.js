@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./ticketStyles.module.css";
 import { useRouter } from "next/router";
 import CulculateFunction from "../../components/UI-cards/calculatefunction";
 import InputField from "../../components/UI-cards/InputField";
@@ -100,7 +101,13 @@ function FirstStepBooking(props) {
     
     <div>
     <NavBar/>
-      <h2>Select your tickets</h2>
+      <div className={styles.hero}>
+        <h1>How this process works</h1>
+              <br/>
+              <p>We set 6 questions you will go through in order for us to provide you with the best experience. Once you reach the tent booking, a timeout will start to make sure you’re still there</p>
+      </div>     
+        <h2>Select your tickets</h2>
+       
       <InputField
         updateRegularTickets={props.updateRegularTickets}
         title={"Regular"}
