@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./BandsCards.module.css";
 import BandsGenre from "./bands-genre/BandsGenre";
 import NavBar from "../nav-bar/NavBar";
+import Footer from "../footer/footer";
 import { useState } from "react";
 import bands1 from "../../public/bands1.svg";
 
@@ -48,8 +49,11 @@ function Bands(props) {
      <div className={styles.visit}> <h1>VISIT OUR <span className={styles.event}>EVENT</span>  PAGE FOR <br />BAND INFO <br />SCHEDUALE <br />ETC</h1>
      </div>
      
-    
+     
+        <Footer> </Footer>
+ 
        </div>
+       
     </section>
   );
 }
