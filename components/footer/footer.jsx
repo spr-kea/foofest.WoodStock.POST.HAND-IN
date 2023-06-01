@@ -26,6 +26,9 @@ function Footer() {
           <Link className="flex flex-col w-28 md:w-80 items-center gap-2 text-sm md:text-lg  cursor-pointer mt-3 ml-360" href="/tickets">
             <p>Get Tickets</p>
           </Link>
+
+
+          
         </div>
       </section>
     );

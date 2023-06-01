@@ -1,4 +1,4 @@
-
+import Footer from "../components/footer/footer";
 import SchedulePage from "../components/schedule/SchedulePage";
 export default function schedule(props) {
   return (
@@ -25,5 +25,6 @@ export const getServerSideProps = async () => {
     
       schedule,
     },
+
   };
 };
