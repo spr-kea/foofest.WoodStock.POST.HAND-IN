@@ -102,45 +102,48 @@ function FirstStepBooking(props) {
     <div>
     <NavBar/>
       <div className={styles.hero}>
-        <h1>How this process works</h1>
+        <h1>The Process</h1>
               <br/>
               <p>We set 6 questions you will go through in order for us to provide you with the best experience. Once you reach the tent booking, a timeout will start to make sure you’re still there</p>
       </div>     
-        <h2>Select your tickets</h2>
-       
-      <InputField
-        updateRegularTickets={props.updateRegularTickets}
-        title={"Regular"}
-        name={"Regular"}
-        price={"799,-"}
-        setTickets={props.setTickets}
-      />
-      <InputField
-        
-        updateVIPTickets={props.updateVIPTickets}
-        title={"VIP"}
-        name={"VIPTicket"}
-        price={"1299,-"}
-      />
-      <h2>Select your camping area</h2>
-      <SelectionAreaOptions
-      selectedArea={props.selectedArea}
+        <div className={styles.tickets}>
+          <h2>Tickets</h2>
+        <div className={styles.input}>
+          <InputField
+            updateRegularTickets={props.updateRegularTickets}
+            title={"Regular"}
+            name={"Regular"}
+            price={"799,-"}
+            setTickets={props.setTickets}
+          />
+          <InputField
+            
+            updateVIPTickets={props.updateVIPTickets}
+            title={"VIP"}
+            name={"VIPTicket"}
+            price={"1299,-"}
+          />
+        </div>
+        <h2>Camping area</h2>
+        <SelectionAreaOptions
+        selectedArea={props.selectedArea}
 
-        selectOption1={availableSpotArray[0]?.area}
-        selectOption1Space={availableSpotArray[0]?.available}
-        selectOption2={availableSpotArray[1]?.area}
-        selectOption2Space={availableSpotArray[1]?.available}
-        selectOption3={availableSpotArray[2]?.area}
-        selectOption3Space={availableSpotArray[2]?.available}
-        selectOption4={availableSpotArray[3]?.area}
-        selectOption4Space={availableSpotArray[3]?.available}
-        selectOption5={availableSpotArray[4]?.area}
-        selectOption5Space={availableSpotArray[4]?.available}
-      />
-      {<CulculateFunction orderInfo={props.orderInfo} setOrderInfo={props.setOrderInfo} />}
-      <div>
-        <button onClick={cancelBooking}>Cancel</button>
-        <button onClick={confirmBooking}>Select Camping Options</button>
+          selectOption1={availableSpotArray[0]?.area}
+          selectOption1Space={availableSpotArray[0]?.available}
+          selectOption2={availableSpotArray[1]?.area}
+          selectOption2Space={availableSpotArray[1]?.available}
+          selectOption3={availableSpotArray[2]?.area}
+          selectOption3Space={availableSpotArray[2]?.available}
+          selectOption4={availableSpotArray[3]?.area}
+          selectOption4Space={availableSpotArray[3]?.available}
+          selectOption5={availableSpotArray[4]?.area}
+          selectOption5Space={availableSpotArray[4]?.available}
+        />
+        {<CulculateFunction orderInfo={props.orderInfo} setOrderInfo={props.setOrderInfo} />}
+        <div>
+          <button onClick={cancelBooking}>Cancel</button>
+          <button onClick={confirmBooking}>Select Camping Options</button>
+        </div>
       </div>
     </div>
   );
