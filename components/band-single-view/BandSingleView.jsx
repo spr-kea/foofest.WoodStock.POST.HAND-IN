@@ -32,7 +32,7 @@ function BandSingleView(props) {
             </section>
           </div>
           <section className={styles.memberList}>
-            <h3>Members :   {props.members}</h3>
+            <h3>Members :   {props.members.join(", ")}</h3>
           </section>
 
     
