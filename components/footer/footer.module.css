@@ -1,11 +1,12 @@
 .my-class {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     margin: auto;
     width: 70%;
     min-height: 50vh;
     align-items: center;
     justify-items: center;
+
     gap: 2rem;
     background-color: var(--color-accent1);
    box-sizing: border-box;
@@ -22,7 +23,7 @@ font-size: var(--type-h3);
 }
 
 .list{
-    grid-column-start: 3;
+ 
  height: 50%;
     justify-content: space-around;
     border-right:solid var(--color-accent2) 8px;
@@ -72,4 +73,4 @@ font-size: var(--type-h4);
     grid-template-columns: 1fr;
 }
 
-  }
+  };

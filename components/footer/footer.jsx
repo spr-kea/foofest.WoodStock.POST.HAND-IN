@@ -25,6 +25,8 @@ function Footer() {
         <button className={styles.button}>Contact</button> 
         </Link>
      </div>
+
+     
         <div className={styles.list}>
       <Link href="/lineup">
           <p className={styles.link}>Line-Up</p>
