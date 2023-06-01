@@ -12,7 +12,7 @@ function SingleBand(props) {
   return (
     <li>
       <Link href={`/bands/${props.slug}`} className={styles.wrapper}>
-        <h2>{props.name}</h2>
+        <h2 className={styles.font}>{props.name}</h2>
         <Image className={styles.img} alt={props.slug} src={props.logo.includes("http") ? props.logo : `${serverUrl1}/logos/${props.logo}`} width="256" height="256" />
     
       </Link>
