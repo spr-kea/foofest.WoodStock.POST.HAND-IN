@@ -1,6 +1,7 @@
 import React from "react";
 import BandsCards from "../components/bands-cards/BandsCards";
 import { useState, useEffect } from "react";
+import Footer from "../components/footer/footer";
 function Bands() {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -16,6 +17,7 @@ function Bands() {
   return (
     <>
       <BandsCards data={data} />
+      
     </>
   );
 }
