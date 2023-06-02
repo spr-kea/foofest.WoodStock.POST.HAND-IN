@@ -15,8 +15,8 @@
   
    }
   
-   .hero h1{
-    color: var(--color-accent1);
+.hero1 h2{
+    color:aliceblue;
     font-family: var(--main-font);
     font-weight: bold;
     font-size: 3.8rem;
@@ -24,6 +24,7 @@
     margin-bottom: 1rem;
     width: 100%;
     z-index: 90000;
+
    }
   
 
@@ -68,7 +69,7 @@
 
 
 
- .hero1 h1{
+ .hero1 h5{
   color:aliceblue;
 
   font-weight: bold;
@@ -217,4 +218,18 @@ label.title1{
 margin-left: 30rem;
       margin-bottom: 1rem;
       width: 100%;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
 }
