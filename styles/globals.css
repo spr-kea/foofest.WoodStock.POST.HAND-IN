@@ -137,3 +137,110 @@ button {
 ol,
 ul {
   list-style: none;}
+
+
+  .input1, .input, .checkbox {
+    color: var(--color-secondary1);
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    display: flex;
+    margin-left: 5rem;
+    margin-block: 1rem;
+    gap: 2rem;
+}
+
+.input2, .header{
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    display: flex;
+    margin-left: 5rem;
+    width: 10%;
+
+
+}
+
+.numeric{
+    width: 10rem;
+    
+}
+
+
+
+.header1, .header{
+    font-family: var(--secondary-font);
+    font-size: 1.9rem;
+    display: flex;
+    margin-left: 5rem;
+    width: 10%;
+
+}
+
+@media only screen and (max-width: 800px) {
+  
+ 
+
+
+    
+     .input1, .input2 {
+      
+      font-size: 1rem;
+      
+      
+     }
+    }
+
+.header1{
+
+            font-family: var(--secondary-font);
+            font-size: 1.9rem;
+            display: flex;
+            margin-left: 5rem;
+            width: 10%;
+        
+
+    }
+
+
+    .header{
+        font-family: var(--secondary-font);
+        font-size: 1.9rem;
+        display: flex;
+        margin-left: 5rem;
+        width: 10%;
+    color: aliceblue;
+    }
+    
+
+    section.header{
+        font-family: var(--secondary-font);
+        font-size: 1.9rem;
+        display: flex;
+        margin-left: 5rem;
+        width: 10%;
+    color: aliceblue;
+    }
+    
+
+
+
+.element{
+        font-family: var(--secondary-font);
+        font-size: 1.9rem;
+        display: flex;
+        margin-left: 5rem;
+        width: 10%;
+    color: aliceblue;
+    }
+
+
+
+
+          h3{
+            font-family: var(--secondary-font);
+            font-size: 1.9rem;
+            display: flex;
+            margin-left: 5rem;
+
+        color: aliceblue;
+    
+        }

@@ -1,4 +1,7 @@
 import React from "react";
+import styles from "./UI-cards/InputField.module.css";
+
+
 
 function CalculateFunction(props) {
   const { orderInfo } = props;
@@ -42,40 +45,42 @@ function CalculateFunction(props) {
 
   }
   return (
-    <div>
-      <h3>Your order</h3>
+    <div >
+      <h3 className={styles.header}>Your order</h3>
 
-      {orderInfo.vipTickets > 0 && (
-        <section>
-          <div>
-            <h4>{orderInfo.vipTickets > 1 ? "VIP tickets" : "VIP ticket"}</h4>
-            <h4>X{orderInfo.vipTickets}</h4>
-            <h4>{totalVIP},-</h4>
+      <section>
+
+      {orderInfo.vipTickets  > 0 && (
+
+          <div className={styles.header} >
+            <h3 className={styles.header}>{orderInfo.vipTickets > 1 ? "VIP tickets" : "VIP ticket"}</h3>
+            <h3 className={styles.header}>X{orderInfo.vipTickets}</h3>
+            <h3>{totalVIP},-</h3>
           </div>
-        </section>
-      )}
 
+      )}
+      </section>
       {orderInfo.regularTickets > 0 && (
         <section>
           <div>
-            <h4>{orderInfo.regularTickets > 1 ? "Regular tickets" : "Regular ticket"}</h4>
-            <h4>X{orderInfo.regularTickets}</h4>
-            <h4>{totalReg},-</h4>
+            <h3>{orderInfo.regularTickets > 1 ? "Regular tickets" : "Regular ticket"}</h3>
+            <h3>X{orderInfo.regularTickets}</h3>
+            <h3>{totalReg},-</h3>
           </div>
         </section>
       )}
 
       {orderInfo.selectedArea !== "" && (
         <section>
-          <h4>{orderInfo.selectedArea}</h4>
+          <h3>{orderInfo.selectedArea}</h3>
         </section>
       )}
 
       {orderInfo.tentService && (
         <section>
-          <div>
-            <h4>Tent set up</h4>
-            <h4>{setUpPrice},-</h4>
+          <div className={styles.header}>
+            <h3 > Tent set up</h3>
+            <h3>{setUpPrice},-</h3>
           </div>
         </section>
       )}
@@ -83,42 +88,42 @@ function CalculateFunction(props) {
       {orderInfo.greenCamping && (
         <section>
           <div>
-            <h4>Green camping</h4>
-            <h4>{tentPrice},-</h4>
+            <h3 className={styles.header}>Green camping</h3>
+            <h3>{tentPrice},-</h3>
           </div>
         </section>
       )}
 
-      <section>
-        <h4>Booking fee</h4>
-        <h4>1</h4>
-        <h4>99,-</h4>
+      <section >
+        <h3 > Booking fee</h3>
+        <h3>1</h3>
+        <h3>99,-</h3>
       </section>
 
       <section>
-        <h4>Total</h4>
+        <h3>Total</h3>
         {orderInfo.greenCamping && orderInfo.tentService ? (
-          <h4>{grandTotal + tentPrice + setUpPrice},-</h4>
+          <h3>{grandTotal + tentPrice + setUpPrice},-</h3>
         ) : orderInfo.greenCamping ? (
-          <h4>{grandTotal + tentPrice},-</h4>
+          <h3>{grandTotal + tentPrice},-</h3>
         ) : orderInfo.tentService ? (
-          <h4>{grandTotal + setUpPrice},-</h4>
+          <h3>{grandTotal + setUpPrice},-</h3>
         ) : (
-          <h4>{grandTotal},-</h4>
+          <h3>{grandTotal},-</h3>
         )}
       </section>
 
-      <div className="input-box box">
-        <div className="input-text">
+      <div >
+        <div className="input">
           <h3>{props.title}</h3>
-          <h4>{props.subtitle}</h4>
+          <h3>{props.subtitle}</h3>
           <p>{props.description}</p>
         </div>
 
-        <div className="price-input">
+        <div className="input">
           <h3>{props.price}</h3>
           {props.name === "TentSetup" ? (
-            <div className="checkbox-container">
+            <div className="checkboxr">
               <input
                 name={props.name}
                 type="checkbox"
@@ -126,10 +131,10 @@ function CalculateFunction(props) {
                 id="checkbox"
                 onChange={props.tentSetUp}
               />
-              <label htmlFor="checkbox" className="checkbox-label" />
+              <label htmlFor="checkbox" className="checkbox" />
             </div>
           ) : (
-            <div className="checkbox-container">
+            <div className="container">
               <input
                 type="checkbox"
                 className="hidden"

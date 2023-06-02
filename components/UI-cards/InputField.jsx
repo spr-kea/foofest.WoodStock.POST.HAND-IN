@@ -4,7 +4,7 @@ import styles from "./InputField.module.css";
 
 function InputField(props) {
   return (
-    <div >
+    <div  >
       <div className={styles.input1}>
         <h3>{props.title}</h3>
         <h3>{props.price}</h3>
