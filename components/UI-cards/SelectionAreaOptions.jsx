@@ -6,7 +6,7 @@ function SelectionAreaOptions(props) {
     <div className={styles.option1}>
       <select className={styles.option} onChange={props.selectedArea} name="select" id="select">
         <option value="choose" defaultValue>
-          Choose your camping area
+           Camping area
         </option>
         <option value={props.selectOption1}>
           {props.selectOption1} ({props.selectOption1Space} available)

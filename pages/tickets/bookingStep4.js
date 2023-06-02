@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "../../components/nav-bar/NavBar";
-
+import styles from "../tickets/ticketStyles.module.css"
 import { Fireworks } from '@fireworks-js/react'
 
 
@@ -10,6 +10,8 @@ function ConfiormBooking() {
 
       <div >
       <NavBar/>
+      <h1 className={styles.hero1}>Thank you for your purchase. You will receive your tickets via email</h1>
+
       <Fireworks
       options={{
         rocketsPoint: {
@@ -26,12 +28,13 @@ function ConfiormBooking() {
         background: '#000'
       }}
     />
-        <h2>Thank you for your purchase</h2>
-        <p>You will receive your tickets via email.</p>
+    
+     
    
 
     </div>
   );
+  
 }
 
 export default ConfiormBooking;

@@ -23,6 +23,7 @@
     margin-inline: 34rem;
     margin-bottom: 1rem;
     width: 100%;
+    z-index: 90000;
    }
   
 
@@ -67,6 +68,16 @@
 
 
 
+ .hero1 h1{
+  color:aliceblue;
+
+  font-weight: bold;
+  font-size: 3.8rem;
+  margin-inline: 34rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  z-index: 900000000;
+ }
 
 
 
@@ -159,3 +170,51 @@ margin-top: 0.6rem;
 
 
 
+.zabi{
+  margin-top: 10rem;
+  color: var(--color-accent1);
+      font-family: var(--main-font);
+      font-weight: bold;
+      font-size: 3rem;
+margin-left: 30rem;
+      margin-bottom: 1rem;
+      width: 100%;
+}
+
+.title{ 
+
+  color: black;
+      font-family: var(--main-font);
+      font-weight: bold;
+      font-size: 1.7rem;
+margin-left: 2rem;
+margin-top: 2rem;
+
+    
+}
+
+.bodys{
+  background-color: bisque;
+}
+
+
+
+
+
+label.title1{ 
+
+  margin-left: 88rem;
+
+    
+}
+
+.Woke{
+  margin-top: 10rem;
+  color:aliceblue;
+      font-family: var(--main-font);
+      font-weight: bold;
+      font-size: 3rem;
+margin-left: 30rem;
+      margin-bottom: 1rem;
+      width: 100%;
+}
