@@ -10,7 +10,7 @@ function ConfiormBooking() {
 
       <div >
       <NavBar/>
-      <h1 className={styles.hero1}>Thank you for your purchase. You will receive your tickets via email</h1>
+  
 
       <Fireworks
       options={{
@@ -29,7 +29,7 @@ function ConfiormBooking() {
       }}
     />
     
-     
+    <h1 className={styles.hero1}>Thank you for your purchase. You will receive your tickets via email</h1>
    
 
     </div>
