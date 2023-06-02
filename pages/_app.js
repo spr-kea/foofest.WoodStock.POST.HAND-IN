@@ -7,7 +7,7 @@ import {
   tentGreen,
   selectArea,
   setOrderID,
-} from "./orderFunctions";
+} from "../components/orderFunctions";
 
 function MyApp({ Component, pageProps }) {
   const [orderInfo, setOrderInfo] = useState({

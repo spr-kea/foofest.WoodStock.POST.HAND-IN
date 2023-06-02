@@ -1,3 +1,5 @@
+import React from "react";
+
 export function updateRegularTickets(event, orderInfo, setOrderInfo) {
     let tickReg = event;
     setOrderInfo({ ...orderInfo, regularTickets: tickReg });
