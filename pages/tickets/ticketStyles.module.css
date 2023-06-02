@@ -1,7 +1,7 @@
 
 
-  .zabi{
-    margin-top: 2rem;
+  .zaba{
+    margin-top: 9rem;
   }
 
   .hero{
@@ -25,12 +25,6 @@
     width: 100%;
    }
   
-   .hero p {
-    color: var(--color-secondary1);
-    font-family: var(--secondary-font);
-    font-size: 1.5rem;
-    margin-inline: 20rem;
-   }
 
    .tickets{
     background-color: var(--color-primary2);
@@ -54,7 +48,11 @@
 
 
 
-
+.bookingfee{
+  margin-left: 15rem;
+  background-color: var(--color-primary2);
+  margin-top: -4rem;
+}
 
 
 
@@ -99,5 +97,29 @@
     }
 
     .zaba{
-      margin-bottom: 4rem;
+      color: var(--color-accent1);
+      font-family: var(--main-font);
+      font-weight: bold;
+      font-size: 3rem;
+
+      margin-bottom: 1rem;
+      width: 100%;
     }
+
+
+
+.bookingfee1{
+  margin-left: 15rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.bookingfee p{
+margin-top: 0.6rem;
+  color: aliceblue;
+}
+
+
+.fullBody{
+  background-color: var(--color-primary2);
+}

@@ -51,33 +51,31 @@ function BookingStep2(props) {
   }
 
   return (
-    <div>
+    <div className={styles.fullBody}>
     <NavBar/>
-      <section>
+      <section className={styles.bookingfee}>
         <h2 className={styles.zaba}>Please Select Your Tent options</h2>
-
+<h3>The Staff Can Set The Tent For You</h3>
         <TentSetUp
           tentSetUp={props.tentSetUp}
-          title={"The Staff Can Set The Tent For You"}
+
           name={"TentSetup"}
 
-          description={"Price Includes The Tents"}
+
           price={`${setUpPrice},-`} // Use setUpPrice variable
         />
-
+        <p className="bookingfeeP">Environment Friendly Tents</p>
         <TentSetUp
           tentGreen={props.tentGreen}
           title={"Green Camping"}
           name={"TentGreen"}
-          description={"Environment Friendly Tents"}
+
           price={`${tentPrice},-`} // Use tentPrice variable
         />
 
-        <p className="bookingfee">
-          A mandatory booking fee of 99,- Only paid once, even if multiple tickets are bought
-        </p>
+      
       </section>
-
+<div className={styles.bookingfee1}>
       <CalculateFunction 
         orderInfo={props.orderInfo}
         tentPrice={tentPrice}
@@ -88,7 +86,7 @@ function BookingStep2(props) {
         tentSetUp={props.tentSetUp}
         tentGreen={props.tentGreen}
       />
-
+</div>
       <div className="booking-steps-buttons">
         <button className="secondary" onClick={CancelBook}>
           Back
