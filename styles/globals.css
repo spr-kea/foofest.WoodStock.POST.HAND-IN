@@ -239,24 +239,33 @@ ul {
             font-family: var(--secondary-font);
             font-size: 1.9rem;
             display: flex;
-            margin-left: 5rem;
+
 
         color: aliceblue;
-    
+
+
         }
 
         button{
-          padding: 14px 40px;
+margin-left: 10rem;
+margin-bottom: 6rem;
 gap: 5px;
+font-family: inter;
+font-size: 1.1rem;
+
+background-color:var(--color-accent1);;
+width: 14rem;
+height: 70px;
 
 
-width: 166px;
-height: 42px;
-left: 254.48px;
-top: 233px;
 
-background: #F6B93B;
+color: var(--color-accent2);
 border: 1px solid #000000;
 box-shadow: 4px 4px 0px #000000;
 border-radius: 4px;
+        }
+
+
+        .zabi{
+          margin-top: 330rem;
         }

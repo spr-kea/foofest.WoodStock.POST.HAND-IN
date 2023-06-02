@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import CalculateFunction from "../../components/UI-cards/CalculateFunction";
 import TentSetUp from "../../components/UI-cards/TentSetUp";
 import NavBar from "../../components/nav-bar/NavBar";
-
+import styles from "../tickets/ticketStyles.module.css"
 function BookingStep2(props) {
   const router = useRouter();
 
@@ -54,7 +54,7 @@ function BookingStep2(props) {
     <div>
     <NavBar/>
       <section>
-        <h2>Please Select Your Tent options</h2>
+        <h2 className={styles.zaba}>Please Select Your Tent options</h2>
 
         <TentSetUp
           tentSetUp={props.tentSetUp}
@@ -78,7 +78,7 @@ function BookingStep2(props) {
         </p>
       </section>
 
-      <CalculateFunction
+      <CalculateFunction 
         orderInfo={props.orderInfo}
         tentPrice={tentPrice}
         setUpPrice={setUpPrice}

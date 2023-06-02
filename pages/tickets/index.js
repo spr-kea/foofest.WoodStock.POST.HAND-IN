@@ -142,7 +142,7 @@ function FirstStepBooking(props) {
         {<CulculateFunction  orderInfo={props.orderInfo} setOrderInfo={props.setOrderInfo} />}
         <div>
           <button onClick={cancelBooking}>Cancel</button>
-          <button onClick={confirmBooking}>Select Camping Options</button>
+          <button onClick={confirmBooking}>Camping Options</button>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./UI-cards/InputField.module.css";
+
 
 
 
@@ -46,15 +46,15 @@ function CalculateFunction(props) {
   }
   return (
     <div >
-      <h3 className={styles.header}>Your order</h3>
+      <h3 >Your order</h3>
 
       <section>
 
       {orderInfo.vipTickets  > 0 && (
 
-          <div className={styles.header} >
-            <h3 className={styles.header}>{orderInfo.vipTickets > 1 ? "VIP tickets" : "VIP ticket"}</h3>
-            <h3 className={styles.header}>X{orderInfo.vipTickets}</h3>
+          <div >
+            <h3 >{orderInfo.vipTickets > 1 ? "VIP tickets" : "VIP ticket"}</h3>
+            <h3 >X{orderInfo.vipTickets}</h3>
             <h3>{totalVIP},-</h3>
           </div>
 
@@ -78,7 +78,7 @@ function CalculateFunction(props) {
 
       {orderInfo.tentService && (
         <section>
-          <div className={styles.header}>
+          <div >
             <h3 > Tent set up</h3>
             <h3>{setUpPrice},-</h3>
           </div>
@@ -88,7 +88,7 @@ function CalculateFunction(props) {
       {orderInfo.greenCamping && (
         <section>
           <div>
-            <h3 className={styles.header}>Green camping</h3>
+            <h3 >Green camping</h3>
             <h3>{tentPrice},-</h3>
           </div>
         </section>
@@ -113,15 +113,7 @@ function CalculateFunction(props) {
         )}
       </section>
 
-      <div >
-        <div className="input">
-          <h3>{props.title}</h3>
-          <h3>{props.subtitle}</h3>
-          <p>{props.description}</p>
-        </div>
 
-        
-      </div>
     </div>
   );
 }
