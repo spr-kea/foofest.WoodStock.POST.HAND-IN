@@ -14,7 +14,6 @@ function Footer() {
       <section className={styles.rectangle}>
       <div className={styles['my-class']}>
       
-
       
      <div className={styles.left}>
       <Link href="/bands" className={styles.logo}> 
@@ -25,7 +24,6 @@ function Footer() {
         <button className={styles.button}>Contact</button> 
         </Link>
      </div>
-
      
         <div className={styles.list}>
       <Link href="/lineup">
@@ -44,7 +42,7 @@ function Footer() {
   
       
     
-    </section>);
+  </section>);
   }
 
 export default Footer;
