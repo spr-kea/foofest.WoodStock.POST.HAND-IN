@@ -99,12 +99,11 @@ function FirstStepBooking(props) {
 
   return (
     
-    <div>
+    <div >
     <NavBar/>
       <div className={styles.hero}>
-        <h1>The Process</h1>
-              <br/>
-              <p>We set 6 questions you will go through in order for us to provide you with the best experience. Once you reach the tent booking, a timeout will start to make sure you’re still there</p>
+        <h1>Booking</h1>
+            
       </div>     
         <div className={styles.tickets}>
           <h2>Tickets</h2>
@@ -138,12 +137,14 @@ function FirstStepBooking(props) {
           selectOption4Space={availableSpotArray[3]?.available}
           selectOption5={availableSpotArray[4]?.area}
           selectOption5Space={availableSpotArray[4]?.available}
-        />
-        {<CulculateFunction  orderInfo={props.orderInfo} setOrderInfo={props.setOrderInfo} />}
-        <div>
+        /> </div>
+
+        <div className={styles.hero1}>
+        {<CulculateFunction  orderInfo={props.orderInfo} setOrderInfo={props.setOrderInfo} />}</div>
+        <div className={styles.hero1}>
           <button onClick={cancelBooking}>Cancel</button>
           <button onClick={confirmBooking}>Camping Options</button>
-        </div>
+       
       </div>
     </div>
   );

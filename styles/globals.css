@@ -246,24 +246,7 @@ ul {
 
         }
 
-        button{
-margin-left: 10rem;
-margin-bottom: 6rem;
-gap: 5px;
-font-family: inter;
-font-size: 1.1rem;
-
-background-color:var(--color-accent1);;
-width: 14rem;
-height: 70px;
-
-
-
-color: var(--color-accent2);
-border: 1px solid #000000;
-box-shadow: 4px 4px 0px #000000;
-border-radius: 4px;
-        }
+ 
 
 
         .zabi{

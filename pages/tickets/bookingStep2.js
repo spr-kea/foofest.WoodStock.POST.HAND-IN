@@ -87,7 +87,7 @@ function BookingStep2(props) {
         tentGreen={props.tentGreen}
       />
 </div>
-      <div className="booking-steps-buttons">
+ <div className={styles.hero1}>
         <button className="secondary" onClick={CancelBook}>
           Back
         </button>

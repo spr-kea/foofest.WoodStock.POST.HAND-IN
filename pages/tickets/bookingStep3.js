@@ -101,7 +101,7 @@ function BookingStep4(props) {
 
       <CulculateFunction orderInfo={props.orderInfo} setOrderInfo={props.setOrderInfo} tentPrice={props.tentPrice} setUpPrice={props.setUpPrice} />
 
-      <div>
+      <div className={styles.hero1}>
         <button onClick={cancelMethod}>Back</button>
         <button onClick={confirmBooking}>Confirm Payment</button>
       </div>

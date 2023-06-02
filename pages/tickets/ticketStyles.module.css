@@ -9,8 +9,8 @@
     justify-content: center;
     flex-direction: column;
     background-color: var(--color-primary1) ;
-    height: 100vh;
-    width: 100vw;
+    height: 50vh;
+
     
   
    }
@@ -19,8 +19,8 @@
     color: var(--color-accent1);
     font-family: var(--main-font);
     font-weight: bold;
-    font-size: 3rem;
-    margin-inline: 20rem;
+    font-size: 3.8rem;
+    margin-inline: 34rem;
     margin-bottom: 1rem;
     width: 100%;
    }
@@ -31,6 +31,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
    
     
    }
@@ -40,7 +41,7 @@
     font-family: var(--main-font);
     font-weight: bold;
     font-size: 3rem;
-    margin-left: 5rem;
+    margin-left: 10rem;
     margin-top: 2rem;
    }
 
@@ -53,6 +54,17 @@
   background-color: var(--color-primary2);
   margin-top: -4rem;
 }
+
+
+
+.hero1{
+  background-color: var(--color-primary2);
+
+
+
+
+ }
+
 
 
 
@@ -123,3 +135,27 @@ margin-top: 0.6rem;
 .fullBody{
   background-color: var(--color-primary2);
 }
+
+.hero1 button{
+  margin-left: 10rem;
+  margin-bottom: 6rem;
+  gap: 5px;
+  font-family: inter;
+  font-size: 1.1rem;
+  
+  background-color:var(--color-accent1);;
+  width: 14rem;
+  height: 70px;
+  
+  
+  
+  color: var(--color-accent2);
+  border: 1px solid #000000;
+  box-shadow: 4px 4px 0px #000000;
+  border-radius: 4px;
+          }
+
+
+
+
+
