@@ -244,3 +244,19 @@ ul {
         color: aliceblue;
     
         }
+
+        button{
+          padding: 14px 40px;
+gap: 5px;
+
+
+width: 166px;
+height: 42px;
+left: 254.48px;
+top: 233px;
+
+background: #F6B93B;
+border: 1px solid #000000;
+box-shadow: 4px 4px 0px #000000;
+border-radius: 4px;
+        }

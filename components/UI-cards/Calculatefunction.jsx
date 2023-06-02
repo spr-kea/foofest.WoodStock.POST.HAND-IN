@@ -120,31 +120,7 @@ function CalculateFunction(props) {
           <p>{props.description}</p>
         </div>
 
-        <div className="input">
-          <h3>{props.price}</h3>
-          {props.name === "TentSetup" ? (
-            <div className="checkboxr">
-              <input
-                name={props.name}
-                type="checkbox"
-                className="hidden"
-                id="checkbox"
-                onChange={props.tentSetUp}
-              />
-              <label htmlFor="checkbox" className="checkbox" />
-            </div>
-          ) : (
-            <div className="container">
-              <input
-                type="checkbox"
-                className="hidden"
-                id="checkbox2"
-                onChange={props.tentGreen}
-              />
-              <label htmlFor="checkbox2" className="checkbox-label" />
-            </div>
-          )}
-        </div>
+        
       </div>
     </div>
   );
