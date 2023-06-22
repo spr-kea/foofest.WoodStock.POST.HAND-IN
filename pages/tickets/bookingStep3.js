@@ -6,6 +6,7 @@ import NavBar from "../../components/nav-bar/NavBar";
 
 import InputMask from "react-input-mask";
 import styles from "./ticketStyles.module.css";
+import Footer from "../../components/footer/Footer";
 
 function BookingStep4(props) {
   const router = useRouter();
@@ -47,9 +48,11 @@ function BookingStep4(props) {
   }
 
   return (
-    <div>
+    <div className={styles.body3}>
       <NavBar />
-      <h2 className={styles.zabi}>Payment Information</h2>
+
+      <div className={styles.container}>
+    <h2 className={styles.zabi}>Payment Information</h2>
       <h2 className={styles.title}>Please Enter Your Credit Card Information.</h2>
       <div>
         <h3 className={styles.title}>Credit Card Details</h3>
@@ -57,43 +60,43 @@ function BookingStep4(props) {
           <div className={styles.title}>
             <label className={styles.title2} htmlFor="form-name">
               Name On Card
-              <input required type="text" name="name" id="form-name" placeholder="Eren Jæger" />
+              <input className={styles.inputSpace} required type="text" name="name" id="form-name" placeholder="Eren Jæger" />
             </label >
           </div>
           <div className={styles.title}>
             <label className={styles.title2} >
               Card Number
-              <InputMask required mask="9999 9999 9999 9999" maskChar={null} placeholder={"1234 1234 1234 1234"} name="cardNo" id="form-cardNo" onBlur={props.verify} />
+              <InputMask className={styles.inputSpace} required mask="9999 9999 9999 9999" maskChar={null} placeholder={"1234 1234 1234 1234"} name="cardNo" id="form-cardNo" onBlur={props.verify} />
             </label >
           </div>
           <div className={styles.title}>
             <label className={styles.title2} >
               Expiry Date
-              <InputMask required mask="99/99" maskChar={null} placeholder={"12/34"} name="expiry" id="form-expiry" onBlur={props.verify} />
+              <InputMask className={styles.inputSpace} required mask="99/99" maskChar={null} placeholder={"12/34"} name="expiry" id="form-expiry" onBlur={props.verify} />
             </label >
           </div>
           <div className={styles.title}>
             <label className={styles.title2} >
               CVC Number
-              <input required type="text" name="cvc" id="form-cvc" inputMode="numeric" maxLength="3" onBlur={props.verify} placeholder={123} />
+              <input className={styles.inputSpace}required type="text" name="cvc" id="form-cvc" inputMode="numeric" maxLength="3" onBlur={props.verify} placeholder={123} />
             </label >
           </div>
           <div className={styles.title}>
             <label className={styles.title2} >
               Email
-              <input required type="email" name="email" id="form-email" onBlur={props.verify} placeholder={"Eren-Jæger@yahoo.dk"} />
+              <input className={styles.inputSpace} required type="email" name="email" id="form-email" onBlur={props.verify} placeholder={"Eren-Jæger@yahoo.dk"} />
             </label >
           </div>
           <div className={styles.title}>
             <label className={styles.title2}  >
               Phone Number
-              <InputMask mask="99 99 99 99" maskChar={null} required type="text" name="phone" id="form-phone" placeholder={"01 23 45 67"} />
+              <InputMask  className={styles.inputSpace}mask="99 99 99 99" maskChar={null} required type="text" name="phone" id="form-phone" placeholder={"01 23 45 67"} />
             </label >
           </div>
           <div className={styles.title}>
             <label className={styles.title2} >
               Billing Address
-              <textarea required name="address" id="form-address" placeholder="Guldbergsgade 29N, 2200 København" />
+              <textarea className={styles.inputSpace} required name="address" id="form-address" placeholder="Guldbergsgade 29N, 2200 København" />
             </label>
           </div>
         </form>
@@ -105,6 +108,9 @@ function BookingStep4(props) {
         <button onClick={cancelMethod}>Back</button>
         <button onClick={confirmBooking}>Confirm Payment</button>
       </div>
+
+      </div>
+  <Footer/>
     </div>
   );
 }

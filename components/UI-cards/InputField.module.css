@@ -6,6 +6,7 @@
     margin-left: 5rem;
     margin-block: 1rem;
     gap: 2rem;
+    
 }
 
 .input2, .header{
@@ -14,7 +15,7 @@
     display: flex;
     margin-left: 5rem;
     width: 10%;
-
+color: var(--color-primary1);
 
 }
 
@@ -26,10 +27,12 @@
     left: 254.48px;
     top: 233px;
     
-    background:var(--color-accent1);
+    background:var(--color-accent2);
     border: 1px solid #000000;
     box-shadow: 4px 4px 0px #000000;
     border-radius: 4px;
+
+
 }
 
 

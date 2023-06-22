@@ -4,6 +4,7 @@ import CalculateFunction from "../../components/UI-cards/CalculateFunction";
 import TentSetUp from "../../components/UI-cards/TentSetUp";
 import NavBar from "../../components/nav-bar/NavBar";
 import styles from "../tickets/ticketStyles.module.css"
+import Footer from "../../components/footer/Footer";
 function BookingStep2(props) {
   const router = useRouter();
 
@@ -95,6 +96,7 @@ function BookingStep2(props) {
           Continue to details
         </button>
       </div>
+      <Footer/>
     </div>
   );
 }

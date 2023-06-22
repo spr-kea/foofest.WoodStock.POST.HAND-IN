@@ -8,7 +8,7 @@ function ConfirmBooking() {
     <div>
       <NavBar />
   
-      <div style={{ position: 'relative' }}>
+      <div className={styles.lastpage} style={{ position: 'relative' }}>
         <Fireworks
           options={{
             rocketsPoint: {

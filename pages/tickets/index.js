@@ -5,6 +5,7 @@ import CulculateFunction from "../../components/UI-cards/calculatefunction";
 import InputField from "../../components/UI-cards/InputField";
 import SelectionAreaOptions from "../../components/UI-cards/SelectionAreaOptions";
 import NavBar from "../../components/nav-bar/NavBar";
+import Footer from "../../components/footer/Footer";
 
 function FirstStepBooking(props) {
   const availableSpotArray = props.availableSpotData;
@@ -108,7 +109,7 @@ function FirstStepBooking(props) {
         <div className={styles.tickets}>
           <h2>Tickets</h2>
         <div className={styles.input}>
-          <InputField
+          <InputField 
             updateRegularTickets={props.updateRegularTickets}
             title={"Regular"}
             name={"Regular"}
@@ -144,9 +145,11 @@ function FirstStepBooking(props) {
         <div className={styles.hero1}>
           <button onClick={cancelBooking}>Cancel</button>
           <button onClick={confirmBooking}>Camping Options</button>
-       
+    
       </div>
+          <Footer/>
     </div>
+   
   );
 }
 
